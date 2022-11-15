@@ -19,7 +19,7 @@ function App() {
     else if (userdetails.lastname.indexOf(" ") > 0 || userdetails.lastname.length == 0) {
       alert("Enter valid last name!");
     }
-    else if (! /[^0-9a-zA-Z]/.test((userdetails.username)) || userdetails.username.length == 0) {
+    else if (! /[a-zA-Z]/.test((userdetails.username)) || userdetails.username.length == 0) {
       alert("Enter valid username!");
     }
     else if (!  /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(userdetails.email) || userdetails.email.length == 0) {
